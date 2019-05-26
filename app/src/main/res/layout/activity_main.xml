@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:id="@+id/et"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+
+        android:layout_alignTop="@+id/et"
+        android:layout_toRightOf="@+id/et"
+        android:layout_toEndOf="@+id/et"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:id="@+id/btn"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/spin"
+        android:layout_toRightOf="@+id/et"
+        android:layout_toEndOf="@+id/et" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/usdtxt"
+        android:id="@+id/TextView1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn"
+        android:layout_alignLeft="@+id/spin"
+        android:layout_alignStart="@+id/spin"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/eurtxt"
+        android:id="@+id/TextView2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/TextView1"
+        android:layout_alignLeft="@+id/spin"
+        android:layout_alignStart="@+id/spin"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/inrtxt"
+        android:id="@+id/TextView3"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/TextView2"
+        android:layout_alignLeft="@+id/spin"
+        android:layout_alignStart="@+id/spin"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/zero"
+        android:id="@+id/usd"
+        android:layout_alignTop="@+id/TextView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/zero"
+        android:id="@+id/euro"
+        android:layout_above="@+id/TextView3"
+        android:layout_alignLeft="@+id/usd"
+        android:layout_alignStart="@+id/usd" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/zero"
+        android:id="@+id/inr"
+        android:layout_alignTop="@+id/TextView3"
+        android:layout_alignLeft="@+id/euro"
+        android:layout_alignStart="@+id/euro" />
+
+
+</RelativeLayout>
